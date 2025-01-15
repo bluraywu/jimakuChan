@@ -299,6 +299,9 @@
         if (arg_recog != null) {
             recognition.lang = arg_recog;
             trans_sourcelang　= recognition.lang;
+            if(trans_sourcelang == "yue"){
+                trans_sourcelang　= "zh-HK";
+            }
         }
         if (arg_trans != null) {
             trans_destlang = arg_trans;
